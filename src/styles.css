@@ -1,0 +1,8 @@
+
+@import "~materialize-css/dist/css/materialize.css";
+
+
+body{
+    overflow-x: hidden;
+    color:#8C1369;
+}

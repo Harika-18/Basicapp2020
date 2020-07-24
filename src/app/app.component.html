@@ -1,0 +1,37 @@
+
+<body>
+    <h3 class="header center ">Basic App</h3>
+<div class="section center">
+    <h5>
+        This Basic App is made using Angular and Materialize CSS. So in daily life evn though we do a 
+        lot more logical work, we still face difficulty in little things like while converting temperature or
+        finding whether given year is leap or not or predicting day for given date, not only this there are
+         so many small things that not all but most of us face difficulty..<br/>
+         But no Worries this Basic App is for u all... 🙂<br/><br/>
+         <button class="btn" (click)="getstarted()">Get Started</button>
+    </h5>
+    <div *ngIf="started" class="startcontent center row">
+        <div class="col l4 s12 m4"></div>
+        <div class=" white col l4 s12 m4">
+      In this Basic App, there are three sections.<br/>
+    Temperature Converter<br/>
+     Day Finder<br/>
+     Check leap year<br/>
+    </div>
+    <div class="col l4 s12 m4"></div>
+    </div>
+    <h5>Have fun ✌️</h5>
+    </div>
+    <h4 class="white center text-dark">Temperature Converter</h4>   
+    <div class="center  white formula">
+            <h6>Formula used<br/><br/>
+                Fahrenheit=Celsius*9/5+32<br/><br/>
+                Celsius=(Fahrenheit-32)*5/9</h6>
+    </div>
+<temperature-converter></temperature-converter>
+<h4 class="white center text-dark">Find day</h4>
+<app-day></app-day>
+<h4 class="white center text-dark">Leap year or not ?</h4>
+<app-leap></app-leap><br/><br/><br/>
+<app-header></app-header>
+</body>

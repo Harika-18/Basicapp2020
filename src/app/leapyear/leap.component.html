@@ -1,0 +1,14 @@
+<body>
+    <div class="box">
+        <div class="row">
+            <div class="col l5 m6 s12">
+                <label>Enter year</label>
+            <input type="number" class="large form-control" [(ngModel)]="year" name="yearname" >
+            <button class="btn" (click)="getyear()">Check</button>                
+            </div>
+            <div *ngIf="ststus" class="col l7 m6 s12">
+                <h5>{{yseorno}}</h5>
+            </div>
+        </div>
+    </div>
+</body>

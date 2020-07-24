@@ -1,0 +1,13 @@
+
+.box{
+  background-color:#8C1369;
+  color:whitesmoke;
+  padding:20px;
+}
+.box label,input{
+  color:whitesmoke;
+  font-size: 19px;
+}
+.box button{
+  background-color:#20fc03;
+}

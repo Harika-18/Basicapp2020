@@ -1,0 +1,17 @@
+<body>
+    <div class="box">
+        <div class="row">
+            <div class="col l5 m6 s12">
+                <label>Enter Day</label>
+            <input type="date" class="large form-control" [(ngModel)]="dategiven">
+            <button class="btn" (click)="getday()">Check</button>              
+            </div>
+            <div *ngIf="flag" class="col l7 m6 s12">
+                <h5>{{message}}</h5>
+            </div>
+            <div *ngIf="incorrect&&!flag" class="col l7 m6 s12">
+                <h5 style="color:red;">{{incmessage}}</h5>
+            </div>
+        </div>
+    </div>
+</body>

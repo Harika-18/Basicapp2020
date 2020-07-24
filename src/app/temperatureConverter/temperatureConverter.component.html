@@ -1,0 +1,38 @@
+<body>
+<br/>
+<div class="box">
+<div class="row ">
+    <!--<div class="col l7 text-center">
+    <h3>Formula used:</h3>
+    <p>Fahrenheit=Celsius*9/5+32</p>
+    <p>Celsius=(Fahrenheit-32)*5+9</p>
+  </div> -->
+  <div class="col l5 s12 m6" >
+  <section class="layout-row align-items-center justify-content-between">
+    <label>Celsius: </label>
+    <input type="number" 
+    value="{{((fahrenheit-32)*5)/9}}"
+    [(ngModel)]="celsius" class="large form-control" data-test-id="celsius-input"/>
+  </section>
+
+  <section class="layout-row align-items-center justify-content-between">
+      <label>Fahrenheit: </label>
+      <input type="number" [(ngModel)]="fahrenheit"
+value="{{((celsius*9)/5)+32}}"
+      class="large form-control" data-test-id="fahrenheit-input"/>
+  </section>
+  <button (click)="refresh()" class="btn btn-success">Refresh</button>
+  </div>
+  <div class="col l7 m6 s12">
+  <h5 *ngIf="celsius!=null">
+    <br/> {{celsius}} in Celsius is equal to {{((celsius*9)/5)+32}} in Fahrenheit
+  </h5>
+  <h5 *ngIf="fahrenheit!=null">
+   <br/> {{fahrenheit}} in Fahrenheit is equal to {{((fahrenheit-32)*5)/9}} in Celsius
+  </h5>
+  </div>
+  <br/>
+   
+</div>
+</div>
+</body>

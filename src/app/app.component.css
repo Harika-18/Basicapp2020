@@ -1,0 +1,17 @@
+.section{
+    background-color: #8C1369;
+    color:whitesmoke;
+    border-radius: 15px;
+    margin:30px;
+    padding:55px;
+}
+.section button{
+background-color:#20fc03;
+}
+.startcontent{
+    color:black;
+}
+.formula{
+    margin:5px;
+    color:#8C1369;
+}
